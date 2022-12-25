@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wall"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/toolbarofmain">
+    <TextView
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorWhite"
+        android:text="    Profile"
+        android:id="@+id/profiletext" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/usernameprofile"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="51dp"
+        android:layout_marginEnd="58dp"
+        android:layout_marginBottom="166dp"
+        android:textColor="@color/colorWhite"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.334" />
+
+    <TextView
+        android:id="@+id/emailprofile"
+        android:layout_width="550dp"
+        android:layout_height="100dp"
+        android:layout_above="@+id/usernameprofile"
+        android:layout_alignStart="@+id/usernameprofile"
+        android:layout_alignEnd="@+id/usernameprofile"
+        android:layout_marginStart="-8dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="147dp"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="218dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/emailprofile"
+        android:layout_alignStart="@+id/emailprofile"
+        android:layout_alignEnd="@+id/emailprofile"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="91dp"
+        android:layout_marginBottom="59dp"
+        android:text="Email:"
+        android:textColor="#EFEFEF"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="140dp"
+        android:layout_height="48dp"
+        android:layout_above="@+id/usernameprofile"
+        android:layout_alignStart="@+id/usernameprofile"
+        android:layout_alignEnd="@+id/usernameprofile"
+        android:layout_marginStart="-3dp"
+        android:layout_marginEnd="164dp"
+        android:layout_marginBottom="40dp"
+        android:text="Username:"
+        android:textColor="#ECE8E8"
+        android:textSize="25sp" />
+
+
+</RelativeLayout>
+
+
